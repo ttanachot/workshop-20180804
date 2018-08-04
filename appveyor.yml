@@ -20,10 +20,12 @@ before_build:
     yarn webpack --config webpack.config.vendor.js
 
     yarn webpack
-    
+
+    cd ..
+
     dotnet restore
 build:
-  project: workshop.csproj
+  project: workshop.sln
   publish_aspnet_core: true
   verbosity: minimal
 notifications:
