@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="tests.csproj" />
+    <ProjectReference Include="..\src\workshop.csproj" />
   </ItemGroup>
 
 </Project>
