@@ -16,8 +16,11 @@ dotnet_csproj:
 before_build:
 - ps: >-
     yarn install
+
     yarn webpack --config webpack.config.vendor.js
+
     yarn webpack
+    
     dotnet restore
 build:
   project: workshop.csproj
